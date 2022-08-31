@@ -43,13 +43,95 @@
 
      combos {
             compatible = "zmk,combos";
-            combo_esc {
+     //layers 0
+            combo_esc0 {
                 timeout-ms = <50>;
-                key-positions = <0 1>;
+                key-positions = <W E>;
                 bindings = <&kp ESC>;
+                layers = 0;
+            };
+            combo_tab0{
+                timeout-ms = <50>;
+                key-positions = <S D>;
+                bindings = <&kp TAB>;
+                layers = 0;
+             };
+       //BS_ENT
+            combo_bsp0{
+                timeout-ms = <50>;
+                key-positions = <J K>;
+                bindings = <&kp BSPC>;
+                layers = 0;
+            };
+            combo_ent0{
+                timeout-ms = <50>;
+                key-positions = <K L>;
+                bindings = <&kp ENTER>;
+                layers = 0;
+            };
+         //Page UP_DN
+             combo_pageup{
+                timeout-ms = <50>;
+                key-positions = <Y U>;
+                bindings = <&kp PG_UP>;
+                layers = 0;
+            };
+            combo_pagedown{
+                timeout-ms = <50>;
+                key-positions = <H J>;
+                bindings = <&kp PG_DN>;
+                layers = 0;
+            };
+            
+      //layers 1
+         //BS_ENT
+            combo_bsp1{
+                timeout-ms = <50>;
+                key-positions = <DOWN UP>;
+                bindings = <&kp BSPC>;
+                layers = 0;
+            };
+            combo_ent2{
+                timeout-ms = <50>;
+                key-positions = <UP RIGHT>;
+                bindings = <&kp ENTER>;
+                layers = 0;
+            };
+            
+      //layers 2
+          //BS_ENT
+            combo_bsp2{
+                timeout-ms = <50>;
+                key-positions = <GRAVE CARET>;
+                bindings = <&kp BSPC>;
+                layers = 0;
+            };
+            combo_ent2{
+                timeout-ms = <50>;
+                key-positions = <CARET SQT>;
+                bindings = <&kp ENTER>;
+                layers = 0;
             };
     };
+    
+/* KEYCODE
+&ext_power
+hiện màn hình chính và hiện app
+C_AC_DESKTOP_SHOW_ALL_WINDOWS
+C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
 
+tăng giảm độ sáng
+C_BRI_UP
+C_BRI_DN
+tăng giảm âm lượng
+C_VOL_UP
+C_VOL_DN
+
+p up/ p down
+PG_UP
+PG_DN
+
+*/ 
 
 
         keymap {
@@ -98,28 +180,7 @@ label= "NUM"                                                   ;
              └─────────┴─────────┼─────────┼─────────┼─────────┤╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┘
                                  │         │    /    │    ▼    │                    │    %    │    .    │         │
                                  └─────────┴─────────┴─────────┘                    └───-─────┴─────────┴─────────┘*/
-/* KEYCODE
-&ext_power
-hiện màn hình chính và hiện app
-C_AC_DESKTOP_SHOW_ALL_WINDOWS
-C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
 
-tăng giảm độ sáng
-C_BRI_UP
-C_BRI_DN
-tăng giảm âm lượng
-C_VOL_UP
-C_VOL_DN
-
-p up/ p down
-PG_UP
-PG_DN
-
-ESC
-BSPC
-DEL
-ENTER
-*/ 
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷           ╷           ╷           ╷           ╷           ╷           ╷
     &kp LG(A)   &kp LG(S)   &kp PSCRN   &trans      &kp PLUS                             &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0
