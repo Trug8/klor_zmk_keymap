@@ -152,7 +152,7 @@ label= "SYM"                                                   ;
     &kp F1      &kp F2      &kp F3      &kp F4       &kp LBRC                            &kp RBRC    &kp AT      &kp HASH    &kp DLLR    &kp EXCL   
     &kp F8      &kp F7      &kp F6      &kp F5       &kp LBKT                            &kp RBKT    &kp GRAVE   &kp CARET   &kp SQT     &kp PIPE
     &kp F9      &kp F10     &kp F11     &kp F12      &kp LPAR    &trans       &trans     &kp RPAR    &kp TILDE   &kp AMPS    &kp DQT     &kp BSLH    
-                            &trans      &kp C_RESET  &kp CAPS                            &trans      &kp C_RESET &trans
+                            &kp K_PWR   &kp C_RESET  &kp CAPS                            &trans      &kp C_RESET &kp K_PWR
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
