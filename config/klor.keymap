@@ -140,24 +140,6 @@
             };
     };
     
-/* KEYCODE
-&ext_power
-hiện màn hình chính và hiện app
-C_AC_DESKTOP_SHOW_ALL_WINDOWS
-C_AC_DESKTOP_SHOW_ALL_APPLICATIONS
-
-tăng giảm độ sáng
-C_BRI_UP
-C_BRI_DN
-tăng giảm âm lượng
-C_VOL_UP
-C_VOL_DN
-
-p up/ p down
-PG_UP
-PG_DN
-
-*/ 
 
 
         keymap {
