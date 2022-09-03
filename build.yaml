@@ -13,9 +13,9 @@
 #
 
 include:
-  - board: nrfmicro_11_flipped
+  - board: nrfmicro_13
     shield: klor_left
-  - board: nrfmicro_11_flipped
+  - board: nrfmicro_13
     shield: klor_right
 # - board: nice_nano_v2
 #    shield: settings_reset
