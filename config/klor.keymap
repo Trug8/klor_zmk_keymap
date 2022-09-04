@@ -44,39 +44,39 @@
      //layers 0
             combo_esc0 {
                 timeout-ms = <50>;
-                key-positions = <W E>;
+                key-positions = <1 2>;
                 bindings = <&kp ESC>;
                 layers = <0>;
             };
             combo_tab0{
                 timeout-ms = <50>;
-                key-positions = <S D>;
+                key-positions = <11 12>;
                 bindings = <&kp TAB>;
                 layers = <0>;
              };
        //BS_ENT
             combo_bsp0{
                 timeout-ms = <50>;
-                key-positions = <J K>;
+                key-positions = <16 17>;
                 bindings = <&kp BSPC>;
                 layers = <0>;
             };
             combo_ent0{
                 timeout-ms = <50>;
-                key-positions = <K L>;
+                key-positions = <17 18>;
                 bindings = <&kp ENTER>;
                 layers = <0>;
             };
          //Page UP_DN
              combo_pageup0{
                 timeout-ms = <50>;
-                key-positions = <Y U>;
+                key-positions = <5 6>;
                 bindings = <&kp PG_UP>;
                 layers = <0>;
             };
             combo_pagedown0{
                 timeout-ms = <50>;
-                key-positions = <N M>;
+                key-positions = <25 26>;
                 bindings = <&kp PG_DN>;
                 layers = <0>;
             };
@@ -85,56 +85,56 @@
          //BS_ENT
             combo_bsp1{
                 timeout-ms = <50>;
-                key-positions = <DOWN UP>;
+                key-positions = <16 17>;
                 bindings = <&kp BSPC>;
-                layers = <0>;
+                layers = <1>;
             };
             combo_ent1{
                 timeout-ms = <50>;
-                key-positions = <UP RIGHT>;
+                key-positions = <17 18>;
                 bindings = <&kp ENTER>;
-                layers = <0>;
+                layers = <1>;
             };
           //VOLUME_UP_DOWN - BRI_UP_DN
             combo_volup1{
                 timeout-ms = <50>;
-                key-positions = <KP_N6 KP_N7>;
+                key-positions = <5 6>;
                 bindings = <&kp C_VOL_UP>;
-                layers = <0>;
+                layers = <1>;
             };
             combo_voldn1{
                 timeout-ms = <50>;
-                key-positions = <KP_N1 KP_N2>;
+                key-positions = <27 28>;
                 bindings = <&kp C_VOL_DN>;
-                layers = <0>;
+                layers = <1>;
             };
            //BRI_UP_DN
             combo_briup1{
                 timeout-ms = <50>;
-                key-positions = <LG(V) MINUS>;
-                bindings = <&kp C_BRI_UP>;
-                layers = <0>;
+                key-positions = <13 14>;
+                bindings = <&kp C_BRI_DN>;
+                layers = <1>;
             };
             combo_bridn1{
                 timeout-ms = <50>;
-                key-positions = <LEFT DOWN>;
-                bindings = <&kp C_BRI_DN>;
-                layers = <0>;
+                key-positions = <15 16>;
+                bindings = <&kp C_BRI_UP>;
+                layers = <1>;
             };
             
       //layers 2
           //BS_ENT
             combo_bsp2{
                 timeout-ms = <50>;
-                key-positions = <GRAVE CARET>;
+                key-positions = <16 17>;
                 bindings = <&kp BSPC>;
-                layers = <0>;
+                layers = <2>;
             };
             combo_ent2{
                 timeout-ms = <50>;
-                key-positions = <CARET SQT>;
+                key-positions = <17 18>;
                 bindings = <&kp ENTER>;
-                layers = <0>;
+                layers = <2>;
             };
     };
     
