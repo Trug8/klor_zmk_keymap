@@ -121,6 +121,13 @@
                 bindings = <&kp C_BRI_UP>;
                 layers = <1>;
             };
+            combo_togble1{
+                timeout-ms = <50>;
+                key-positions = <3 4>;
+                bindings = <&out OUT_TOG>;
+                layers = <1>;
+            };
+            
             
       //layers 2
           //BS_ENT
