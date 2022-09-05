@@ -237,7 +237,7 @@ label= "BLE"                                                   ;
 // └───────────────────────────────────────────────────────────┘
 /*           
              ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │    E    │  POWER  │ RGB_TOG │ ╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮ │         │         │         │         │         │
+             │         │         │    B    │  POWER  │ RGB_TOG │ ╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮ │         │         │         │         │         │
              ├─────────┼─────────┼─────────┼─────────┼─────────┤ │╰╯╰╯╰╯╰╯╰╯╰╯╰╯╰╯│ ├─────────┼─────────┼─────────┼─────────┼─────────┤
              │         │         │   BLE1  │   BLE2  │   BLE3  ├─╯                ╰─┤         │         │         │         │         │
              ├─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┤
@@ -248,7 +248,7 @@ label= "BLE"                                                   ;
  */ 
  bindings = <
 //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
-   &trans      &trans      &kp E &ext_power EP_TOG &rgb_ug RGB_TOG                     &trans      &trans      &trans      &trans      &trans     
+   &trans      &trans      &kp B &ext_power EP_TOG &rgb_ug RGB_TOG                     &trans      &trans      &trans      &trans      &trans     
    &trans      &trans      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                      &trans      &trans      &trans      &trans      &trans
    &trans      &trans      &bt BT_CLR  &out OUT_USB &out OUT_BLE   &trans    &trans    &trans      &trans      &trans      &trans      &trans
                            &trans      &trans       &trans                             &trans      &trans      &trans    
