@@ -167,8 +167,8 @@ label= "BASE"                                                  ;
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷           ╷           ╷           ╷           ╷           ╷           ╷
     &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P 
-   &lt BLE A    &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J       &kp K       &kp L       &kp SEMI  
-   &hm LCTRL Z  &hm LALT X  &hm LCMD C  &kp V       &kp B       &kp K_MUTE   &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH  
+    &kp A       &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J       &kp K       &kp L       &kp SEMI  
+   &hm LCTRL Z  &hm LALT X  &hm LCMD C  &kp V       &lt BLE B   &kp K_MUTE   &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH  
                             &trans  &mt LSHIFT TAB  &lt NUM SPACE                    &lt SYM MINUS   &mt LSHIFT EXCL  &trans
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -249,8 +249,8 @@ label= "BLE"                                                   ;
  bindings = <
 //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
    &kp B &ext_power EP_ON  &rgb_ug RGB_ON &ext_power EP_TOG &rgb_ug RGB_TOG            &trans      &trans      &trans      &trans      &trans     
-   &trans      &trans      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                      &trans      &trans      &trans      &trans      &trans
-   &trans      &trans      &bt BT_CLR  &out OUT_USB &out OUT_BLE   &trans    &trans    &trans      &trans      &trans      &trans      &trans
+   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans    &trans                             &trans      &trans      &trans      &trans      &trans
+   &bt BT_CLR  &out OUT_USB &out OUT_BLE  &trans    &trans         &trans    &trans    &trans      &trans      &trans      &trans      &trans
                            &trans      &trans       &trans                             &trans      &trans      &trans    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
