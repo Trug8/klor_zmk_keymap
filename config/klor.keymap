@@ -77,7 +77,7 @@
             };
             combo_pagedown0{
                 timeout-ms = <50>;
-                key-positions = <25 26>;
+                key-positions = <27 28>;
                 bindings = <&kp PG_DN>;
                 layers = <0>;
             };
@@ -165,9 +165,9 @@ label= "BASE"                                                  ;
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷           ╷           ╷           ╷           ╷           ╷           ╷
     &kp Q       &kp W       &kp E       &kp R       &kp T                                &kp Y       &kp U       &kp I       &kp O       &kp P 
-    &kp A       &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J       &kp K       &kp L       &kp SEMI  
-    &mt LCTRL Z &mt LALT X  &mt LCMD C  &kp V       &kp B       &kp K_MUTE   &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH  
-                            &mo BLE  &mt LSHIFT TAB  &lt NUM SPACE                    &lt SYM MINUS   &mt LSHIFT EXCL  &trans
+   &lt BLE A    &kp S       &kp D       &kp F       &kp G                                &kp H       &kp J       &kp K       &kp L       &kp SEMI  
+   &ht_tp LCTRL Z &ht_tp LALT X  &ht_tp LCMD C  &kp V &kp B     &kp K_MUTE   &kp C_PP    &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH  
+                            &trans  &mt LSHIFT TAB  &lt NUM SPACE                    &lt SYM MINUS   &mt LSHIFT EXCL  &trans
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -215,14 +215,14 @@ label= "SYM"                                                   ;
              ├─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┤
              │   F9    │   F10   │   F11   │   F12   │    (    ││  MUTE  ││PLY/PSE ││    )    │    ~    │    &    │    "    │    \    │
              └─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┘
-                                 │         │  RESET  │ BLE*CAP │                    │    ▼    │  RESET  │         │
+                                 │         │  RESET  │   CAP   │                    │    ▼    │  RESET  │         │
                                  └─────────┴─────────┴─────────┘                    └─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
     &kp F1      &kp F2      &kp F3      &kp F4       &kp LBRC                            &kp RBRC    &kp AT      &kp HASH    &kp DLLR    &kp EXCL   
     &kp F8      &kp F7      &kp F6      &kp F5       &kp LBKT                            &kp RBKT    &kp GRAVE   &kp CARET   &kp SQT     &kp PIPE
     &kp F9      &kp F10     &kp F11     &kp F12      &kp LPAR    &trans       &trans     &kp RPAR    &kp TILDE   &kp AMPS    &kp DQT     &kp BSLH    
-                            &trans      &reset       &lt BLE CAPS                        &trans      &reset      &trans
+                            &trans      &reset       &kp CAPS                            &trans      &reset      &trans
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -235,21 +235,21 @@ label= "BLE   "                                                ;
 // └───────────────────────────────────────────────────────────┘
 /*           
              ┌─────────┬─────────┬─────────┬─────────┬─────────┐                    ┌─────────┬─────────┬─────────┬─────────┬─────────┐
-             │         │         │         │   ON    │   OFF   │ ╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮ │         │         │         │         │         │
+             │         │         │    E    │  POWER  │ RGB_TOG │ ╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮╭╮ │         │         │         │         │         │
              ├─────────┼─────────┼─────────┼─────────┼─────────┤ │╰╯╰╯╰╯╰╯╰╯╰╯╰╯╰╯│ ├─────────┼─────────┼─────────┼─────────┼─────────┤
-             │         │         │         │         │         ├─╯                ╰─┤         │         │         │         │         │
+             │         │         │   BLE1  │   BLE2  │   BLE3  ├─╯                ╰─┤         │         │         │         │         │
              ├─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┤
-             │         │         │  CLEAR  │   USB   │   BLE   ││        ││        ││   BLE1  │   BLE2  │   BLE3  │         │         │
+             │         │         │  CLEAR  │   USB   │   BLE   ││        ││        ││         │         │         │         │         │
              └─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┘
                                  │    ▼    │    ▼    │    ▼    │                    │    ▼    │    ▼    │    ▼    │
                                  └─────────┴─────────┴─────────┘                    └─────────┴─────────┴─────────┘ 
  */ 
  bindings = <
 //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
-   &ext_power EP_TOG      &rgb_ug RGB_TOG      &trans   &ext_power EP_ON &ext_power EP_OFF                 &trans      &trans      &trans      &trans      &trans
-   &trans      &trans      &trans      &trans      &trans                              &trans      &trans      &trans      &trans      &trans
-   &trans      &trans      &bt BT_CLR &out OUT_USB &out OUT_BLE   &trans    &trans   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans     &trans
-                           &trans      &trans      &trans                              &trans      &trans      &trans    
+   &trans      &trans      &kp E &ext_power EP_TOG &rgb_ug RGB_TOG                    &trans      &trans      &trans      &trans      &trans     
+   &trans      &trans      &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3                      &trans      &trans      &trans      &trans      &trans
+   &trans      &trans      &bt BT_CLR  &out OUT_USB &out OUT_BLE   &trans    &trans    &trans      &trans      &trans      &trans      &trans
+                           &trans      &trans       &trans                             &trans      &trans      &trans    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
