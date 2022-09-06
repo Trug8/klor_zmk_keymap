@@ -194,7 +194,7 @@ label= "NUM"                                                   ;
 
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷           ╷           ╷           ╷           ╷           ╷           ╷
-    &kp LG(A)   &kp LG(S)   &sk LG(LS(N3))   &sk LG(LS(N4)) &kp PLUS                     &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0
+    &kp LG(A)   &kp LG(S)   &sk LG(LS(N3))  &sk LG(LS(N4))  &kp PLUS                     &kp KP_N6   &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0
     &kp LG(Z)   &kp LG(X)   &kp LG(C)   &kp LG(V)   &kp MINUS                            &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp EQUAL
     &kp LCTRL   &kp LALT    &kp LCMD    &kp LSHFT   &kp STAR    &trans        &trans     &kp N1      &kp KP_N2   &kp KP_N3   &kp KP_N4   &kp KP_N5
                             &trans      &kp SLASH   &trans                               &kp PRCNT   &kp DOT     &kp COMMA
@@ -221,10 +221,10 @@ label= "SYM"                                                   ;
                                  └─────────┴─────────┴─────────┘                    └─────────┴─────────┴─────────┘ */ 
  bindings = <
  //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
-    &kp F1      &kp F2      &kp F3      &kp F4       &kp LBRC                            &kp RBRC    &kp AT      &kp HASH    &kp DLLR    &kp EXCL   
-    &kp F8      &kp F7      &kp F6      &kp F5       &kp LBKT                            &kp RBKT    &kp GRAVE   &kp CARET   &kp SQT     &kp PIPE
-    &kp F9      &kp F10     &kp F11     &kp F12      &kp LPAR    &trans       &trans     &kp RPAR    &kp TILDE   &kp AMPS    &kp DQT     &kp BSLH    
-                            &trans      &reset       &kp CAPS                            &trans      &reset      &trans
+    &kp F1      &kp F2      &kp F3      &kp F4      &kp LBRC                            &kp RBRC    &kp AT      &kp HASH    &kp DLLR    &kp EXCL   
+    &kp F8      &kp F7      &kp F6      &kp F5      &kp LBKT                            &kp RBKT    &kp GRAVE   &kp CARET   &kp SQT     &kp PIPE
+    &kp F9      &kp F10     &kp F11     &kp F12     &kp LPAR    &trans       &trans     &kp RPAR    &kp TILDE   &kp AMPS    &kp DQT     &kp BSLH    
+                            &trans      &reset      &kp CAPS                            &trans      &reset      &trans
                         >;
                 sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
                 };
@@ -241,16 +241,16 @@ label= "BLE"                                                   ;
              ├─────────┼─────────┼─────────┼─────────┼─────────┤ │╰╯╰╯╰╯╰╯╰╯╰╯╰╯╰╯│ ├─────────┼─────────┼─────────┼─────────┼─────────┤
              │   BLE1  │   BLE2  │   BLE3  │         │         ├─╯                ╰─┤         │         │         │         │         │
              ├─────────┼─────────┼─────────┼─────────┼─────────┤╭────────╮╭────────╮├─────────┼─────────┼─────────┼─────────┼─────────┤
-             │  CLEAR  │   USB   │   BLE   │         │         ││        ││        ││         │         │         │         │         │
+             │  CLEAR  │   USB   │   BLE   │         │    ▼    ││        ││        ││         │         │         │         │         │
              └─────────┴─────────┼─────────┼─────────┼─────────┼╰────────╯╰────────╯┼─────────┼─────────┼─────────┼─────────┴─────────┘
-                                 │    ▼    │    ▼    │    ▼    │                    │    ▼    │    ▼    │    ▼    │
+                                 │         │         │         │                    │         │         │         │
                                  └─────────┴─────────┴─────────┘                    └─────────┴─────────┴─────────┘ 
  */ 
  bindings = <
 //╷           ╷           ╷           ╷           ╷           ╷           ╷╷          ╷           ╷           ╷           ╷           ╷            ╷
-   &kp B &ext_power EP_ON  &rgb_ug RGB_ON &ext_power EP_TOG &rgb_ug RGB_TOG            &trans      &trans      &trans      &trans      &trans     
-   &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans    &trans                             &trans      &trans      &trans      &trans      &trans
-   &bt BT_CLR  &out OUT_USB &out OUT_BLE  &trans    &trans         &trans    &trans    &trans      &trans      &trans      &trans      &trans
+   &kp B  &ext_power EP_ON   &rgb_ug RGB_ON  &ext_power EP_TOG  &rgb_ug RGB_TOG        &trans      &trans      &trans      &trans      &trans     
+   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans &trans                             &trans      &trans      &trans      &trans      &trans
+   &bt BT_CLR  &out OUT_USB  &out OUT_BLE  &trans   &trans     &trans       &trans     &trans      &trans      &trans      &trans      &trans
                            &trans      &trans       &trans                             &trans      &trans      &trans    
                         >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
