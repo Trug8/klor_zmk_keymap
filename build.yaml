@@ -13,9 +13,9 @@
 #
 
 include:
-  - board: mikoto_520
+  - board: mikoto
     shield: klor_left
-  - board: mikoto_520
+  - board: mikoto
     shield: klor_right
 # - board: nice_nano_v2
 #    shield: settings_reset
